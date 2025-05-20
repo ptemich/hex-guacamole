@@ -56,10 +56,30 @@ def listy():
     kwadratyLiczbParzystych = [x ** 2 for x in listaNumeryczna if x % 2 == 0] # [operacja for x in lista if warunek] - buduje nową listę
     print(kwadratyLiczbParzystych)
 
+def krotki():
+    # niezmienne uprządkowane
+    krotka = (3, 6)
+    print(krotka[0])
+
+def slowniki():
+    dictionary = {"imie": "Jan", "nazisko": "Kowalski", "wiek": 51}
+    lista_kluczy = dictionary.keys()
+    lista_wartosci = dictionary.values()
+
+    dictionary.update({"adres" : "zadupie dolne 32"})
+    print(dictionary.items())
+
+def zbiory():
+    secior_1 = {"zielony", "czerwony", "niebieski"}
+    secior_2 = {"fioletowy", "czerwony", "czarny"}
+
+    # trzy mega rzeczy ktorych nie ma w javusi :P
+    print(secior_1 | secior_2) # unia na setach
+    print(secior_1 & secior_2) # przeciecie setow
+    print(secior_1 - secior_2) # roznica setow
+    print(secior_1 ^ secior_2) # symetic difference - co to jest ?
+
 if __name__ == '__main__':
-    # warunki(2,'fajne', 'niefajne')
-    # kolekcja = ["jablko", "gruszka", "zelki"]
-    # petle(kolekcja)
-    listy()
+    zbiory()
 
 
